@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,300;1,700&family=Kalam:wght@700&display=swap" rel="stylesheet">
+    
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body style="background:radial-gradient(rgb(162, 249, 255),rgb(245, 250, 248));" >
+    <form method='get' action="/query3submit">
+       
+        <h4 style="color:rgb(116, 8, 30);font-size: 350%;text-align: center; font-family:'Comic Neue';" >Select a department, to know about the salaries</h4>
+        <select style="font-size: 200%;color: darkblue;margin-left: 40%;border-radius: 10%;" name="dname" id="dname">
+            <% data.forEach(function(item, index){ %>
+                   <option value="<%= item.dname %>"><%= item.dname %></option>
+                <% }); %>
+    </select>
+        <input style="font-size: 200%;margin-left: 5%;border-radius: 10%; font-family:'Comic Neue';" type="submit"/>
+   
+
+ </form>
+ <footer class="footer" style="position:relative;top:220px;">
+    <p class="footer__title"></p>
+    <div class="footer__social">
+        <a  href="https://www.instagram.com/prajwal.nayak_/ " class="footer__icon"><i class='bx bxl-instagram' ></i></a></a>
+        <a href="https://github.com/PrajwalNayak69/" class="footer__icon"><i class='bx bxl-github' ></i>
+        <span>&nbsp&nbsp&nbsp&nbsp</span>
+        <a href="https://www.instagram.com/pranam.acharya.948/ " class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+        <a href="https://github.com/Pranamacharya/" class="footer__icon"><i class='bx bxl-github' ></i></a>
+    </div>
+    <p>&#169; 2021 copyright all right reserved</p>
+</footer>
+
+
+<!-- CSS file -->
+
+<style>
+    .footer{
+background-color: #0E2431;
+color: #fff;
+text-align: center;
+font-weight: 600;
+padding: 1rem 0;
+}
+.footer__title{
+font-size: 2rem;
+margin-bottom: 2rem;
+}
+.footer__social{
+margin-bottom: 2rem;
+}
+.footer__icon{
+font-size: 1.5rem;
+color: #fff;
+margin: 0.5rem
+}
+
+
+            
+
+        
+        
+
+</style>
+</body>
+</html>
